@@ -192,6 +192,6 @@ contract NFTMarket is ERC721URIStorage {
     }
 
     constructor() ERC721("Daisy NFT Market", "daisy_nft_market_01") {
-        owner == payable(msg.sender);
+        owner = payable(msg.sender);
     }
 }
